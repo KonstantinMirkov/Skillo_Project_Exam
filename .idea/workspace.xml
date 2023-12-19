@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="16c1c52a-5084-480f-87e7-389ef2c1e516" name="Changes" comment="Skillo exam">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exam/Header.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exam/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exam/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exam/PostModal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exam/PostPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exam/ProfilePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/upload/image_upload.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Exam/TestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Exam/TestLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Exam/TestLogout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Exam/TestNewPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Exam/TestProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/texting.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2ZMQSIpF3T0dLyBF5HGWpJZJAoT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/SKILLO/Skillo_Project_Exam/src/main/java&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Exam" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SKILLO\Skillo_Project_Exam\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\SKILLO\Skillo_Project_Exam\src\main\resources\upload" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.E:/SKILLO/Skillo_Project_Exam/texting.xml">
+    <configuration name="E:/SKILLO/Skillo_Project_Exam/texting.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Skillo_Project_Exam" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/texting.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Skillo_Project_Exam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Exam.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Exam" />
+      <option name="MAIN_CLASS_NAME" value="Exam.TestLogin" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNewPost" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Skillo_Project_Exam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Exam.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Exam" />
+      <option name="MAIN_CLASS_NAME" value="Exam.TestNewPost" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestProfile" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Skillo_Project_Exam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Exam.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Exam" />
+      <option name="MAIN_CLASS_NAME" value="Exam.TestProfile" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestProfile.testNumberOfPostsCounter" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Skillo_Project_Exam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Exam.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Exam" />
+      <option name="MAIN_CLASS_NAME" value="Exam.TestProfile" />
+      <option name="METHOD_NAME" value="testNumberOfPostsCounter" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.E:/SKILLO/Skillo_Project_Exam/texting.xml" />
+        <item itemvalue="TestNG.TestLogin" />
+        <item itemvalue="TestNG.TestProfile" />
+        <item itemvalue="TestNG.TestProfile.testNumberOfPostsCounter" />
+        <item itemvalue="TestNG.TestNewPost" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16c1c52a-5084-480f-87e7-389ef2c1e516" name="Changes" comment="" />
+      <created>1702229466618</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702229466618</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Skillo exam" />
+    <option name="LAST_COMMIT_MESSAGE" value="Skillo exam" />
+  </component>
+</project>
