@@ -13,7 +13,7 @@ Welcome to the **Skillo Project Exam** repository! This project is a Java Maven 
    - Utilizes PageFactory for efficient element management.
 
 3. **Automated Test Scenarios**:
-   - 13 different test scenarios are automated.
+   - 13 test scenarios are automated.
    - These scenarios are executed against the following website: [http://training.skillo-bg.com:4200/posts/all](http://training.skillo-bg.com:4200/posts/all).
 
 4. **testng.xml File**:
