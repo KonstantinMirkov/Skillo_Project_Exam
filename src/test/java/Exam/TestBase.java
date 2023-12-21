@@ -6,7 +6,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -17,8 +16,6 @@ import org.testng.annotations.BeforeSuite;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
-import java.util.HashMap;
-import java.util.Map;
 
 public class TestBase {
     public static final String TEST_RESOURCES_DIR = "src\\main\\resources\\";
@@ -35,14 +32,13 @@ public class TestBase {
 
     @BeforeSuite
     protected final void setupTestSuite() throws IOException {
-        cleanDirectory(REPORTS_DIR);
         cleanDirectory(SCREENSHOTS_DIR);
         WebDriverManager.chromedriver().setup();
     }
 
     @BeforeMethod
     protected final void setUpMethod() {
-        this.driver = new ChromeDriver(configChromeOptions());
+        this.driver = new ChromeDriver();
         this.driver.manage().window().maximize();
         this.driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -57,15 +53,6 @@ public class TestBase {
     @AfterSuite
     public void deleteDownloadedFiles() throws IOException {
         cleanDirectory(DOWNLOAD_DIR);
-    }
-
-    // Configures Chrome additional options. Currently, changes the download directory
-    private ChromeOptions configChromeOptions() {
-        Map<String, Object> prefs = new HashMap<>();
-        prefs.put("download.default_directory", System.getProperty("user.dir").concat("\\").concat(DOWNLOAD_DIR));
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.setExperimentalOption("prefs", prefs);
-        return chromeOptions;
     }
 
     // Cleans files in a directory provided as input parameter

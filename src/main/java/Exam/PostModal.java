@@ -18,6 +18,9 @@ public class PostModal {
     private WebElement postTitle;
     @FindBy(className = "post-user")
     private WebElement postUser;
+    @FindBy(css = ".post-modal-img img")
+    private WebElement image;
+
 
     public PostModal(WebDriver driver) {
         this.driver = driver;
@@ -27,7 +30,6 @@ public class PostModal {
 
     public boolean isImageVisible() {
         try {
-            WebElement image = modalElement.findElement(By.cssSelector(".post-modal-img img"));
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             return wait.until(ExpectedConditions.visibilityOf(image)).isDisplayed();
         } catch (NoSuchElementException e) {
