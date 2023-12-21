@@ -1,6 +1,5 @@
 package Exam;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,6 +23,8 @@ public class ProfilePage {
     private WebElement allButton;
     @FindBy(css = "i.far")
     private WebElement newPostButton;
+    @FindBy(tagName = "app-post")
+    private List<WebElement> posts;
 
     private final WebDriver driver;
 
@@ -80,12 +81,10 @@ public class ProfilePage {
     }
 
     public int getPostCount() {
-        List<WebElement> posts = driver.findElements(By.tagName("app-post"));
         return posts.size();
     }
 
     public void clickPost(int postIndex) {
-        List<WebElement> posts = driver.findElements(By.tagName("app-post"));
         posts.get(postIndex).click();
     }
 

@@ -3,6 +3,7 @@ package Exam;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,6 +14,10 @@ import java.util.NoSuchElementException;
 public class PostModal {
     private final WebDriver driver;
     private final WebElement modalElement;
+    @FindBy(className = "post-title")
+    private WebElement postTitle;
+    @FindBy(className = "post-user")
+    private WebElement postUser;
 
     public PostModal(WebDriver driver) {
         this.driver = driver;
@@ -32,12 +37,10 @@ public class PostModal {
     }
 
     public String getPostTitle() {
-        WebElement postTitle = modalElement.findElement(By.className("post-title"));
         return postTitle.getText();
     }
 
     public String getPostUser() {
-        WebElement postUser = modalElement.findElement(By.className("post-user"));
         return postUser.getText();
     }
 }

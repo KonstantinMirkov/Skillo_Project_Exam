@@ -1,8 +1,8 @@
 package Exam;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,6 +14,17 @@ import java.util.NoSuchElementException;
 public class PostPage {
     public static final String PAGE_URL = "http://training.skillo-bg.com:4200/posts/create";
     private final WebDriver driver;
+    @FindBy(css = "img.image-preview")
+    private WebElement image;
+    @FindBy(css = "input.input-lg")
+    private WebElement imageTextElement;
+    @FindBy(css = ".file[type='file']")
+    private WebElement uploadField;
+    @FindBy(name = "caption")
+    private WebElement captionElement;
+    @FindBy(id = "create-post")
+    private WebElement createPostButton;
+
 
     public PostPage(WebDriver driver) {
         this.driver = driver;
@@ -22,7 +33,6 @@ public class PostPage {
 
     public boolean isImageVisible() {
         try {
-            WebElement image = driver.findElement(By.cssSelector("img.image-preview"));
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             return wait.until(ExpectedConditions.visibilityOf(image)).isDisplayed();
         } catch (NoSuchElementException e) {
@@ -32,23 +42,18 @@ public class PostPage {
     }
 
     public String getImageName() {
-        WebElement imageTextElement = driver.findElement(By.cssSelector("input.input-lg"));
-        String imageName = imageTextElement.getAttribute("placeholder");
-        return imageName;
+        return imageTextElement.getAttribute("placeholder");
     }
 
     public void uploadPicture(File file) {
-        WebElement uploadField = driver.findElement(By.cssSelector(".file[type='file']"));
         uploadField.sendKeys(file.getAbsolutePath());
     }
 
     public void populatePostCaption(String caption) {
-        WebElement captionElement = driver.findElement(By.name("caption"));
         captionElement.sendKeys(caption);
     }
 
     public void clickCreatePost() {
-        WebElement createPostButton = driver.findElement(By.id("create-post"));
         createPostButton.click();
     }
 
