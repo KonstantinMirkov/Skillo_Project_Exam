@@ -6,10 +6,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
@@ -19,9 +17,7 @@ import java.time.Duration;
 
 public class TestBase {
     public static final String TEST_RESOURCES_DIR = "src\\main\\resources\\";
-    public static final String DOWNLOAD_DIR = TEST_RESOURCES_DIR.concat("download\\");
     public static final String SCREENSHOTS_DIR = TEST_RESOURCES_DIR.concat("screenshots\\");
-    public static final String REPORTS_DIR = TEST_RESOURCES_DIR.concat("reports\\");
     public static final String UPLOAD_DIR = TEST_RESOURCES_DIR.concat("upload\\");
 
     private WebDriver driver;
@@ -31,8 +27,7 @@ public class TestBase {
     }
 
     @BeforeSuite
-    protected final void setupTestSuite() throws IOException {
-        cleanDirectory(SCREENSHOTS_DIR);
+    protected final void setupTestSuite() {
         WebDriverManager.chromedriver().setup();
     }
 
@@ -50,26 +45,6 @@ public class TestBase {
         quitDriver();
     }
 
-    @AfterSuite
-    public void deleteDownloadedFiles() throws IOException {
-        cleanDirectory(DOWNLOAD_DIR);
-    }
-
-    // Cleans files in a directory provided as input parameter
-    private void cleanDirectory(String directoryPath) throws IOException {
-        File directory = new File(directoryPath);
-
-        Assert.assertTrue(directory.isDirectory(), "Invalid directory!");
-
-        FileUtils.cleanDirectory(directory);
-        String[] fileList = directory.list();
-        if (fileList != null && fileList.length == 0) {
-            System.out.printf("All files are deleted in Directory: %s%n", directoryPath);
-        } else {
-            System.out.printf("Unable to delete the files in Directory:%s%n", directoryPath);
-        }
-    }
-
     // Takes screenshot of the currently opened browser page
     private void takeScreenshot(ITestResult testResult) {
         if (ITestResult.FAILURE == testResult.getStatus()) {
@@ -82,7 +57,6 @@ public class TestBase {
                 System.out.println("Unable to create a screenshot file: " + e.getMessage());
             }
         }
-
     }
 
     private void quitDriver() {

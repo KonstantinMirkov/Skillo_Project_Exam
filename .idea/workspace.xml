@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16c1c52a-5084-480f-87e7-389ef2c1e516" name="Changes" comment="Skillo exam">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exam/PostModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exam/PostModal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/screenshots/testCreatePost.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Exam/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Exam/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +50,7 @@
       <recent name="E:\SKILLO\Skillo_Project_Exam\src\main\resources\upload" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.E:/SKILLO/Skillo_Project_Exam/texting.xml">
+  <component name="RunManager" selected="TestNG.TestNewPost.testCreatePost">
     <configuration name="E:/SKILLO/Skillo_Project_Exam/texting.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Skillo_Project_Exam" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/texting.xml" />
@@ -136,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestNewPost.testCreatePost" />
+        <item itemvalue="TestNG.TestLogin" />
         <item itemvalue="TestNG.E:/SKILLO/Skillo_Project_Exam/texting.xml" />
         <item itemvalue="TestNG.TestProfile" />
-        <item itemvalue="TestNG.TestNewPost.testCreatePost" />
         <item itemvalue="TestNG.TestProfile.testNumberOfPostsCounter" />
-        <item itemvalue="TestNG.TestLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703170284147</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Skillo exam">
+      <created>1703171386153</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703171386153</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
