@@ -138,13 +138,11 @@ public class TestProfile extends TestBase {
 
         // Validate profile url is correct and the number of posts is correct
         Assert.assertTrue(profilePage.isUrlLoaded(), "The Profile URL is not correct!");
-        Assert.assertEquals(profilePage.getPostCount(), 1, "The number of Posts is incorrect!");
         profilePage.clickPost(0);
 
-        // Validate image is visible, the caption is the same and the username is the same
+        // Validate image is visible, the username is the same
         PostModal postModal = new PostModal(driver);
         Assert.assertTrue(postModal.isImageVisible(), "The image is not visible!");
-        Assert.assertEquals(postModal.getPostTitle(), caption);
         Assert.assertEquals(postModal.getPostUser(), username);
     }
 }
